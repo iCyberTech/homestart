@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Buttons</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <button class="big-button" onclick="window.location.href='assignments.html'">Assignment</button>
+    <button class="big-button" onclick="window.location.href='home.html'">Eresults</button>
+    <button class="big-button" onclick="window.location.href='update.html'">Calendar</button>
+  </div>
+</body>
+</html>
+<style>
+    /* General Reset */
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Center the buttons on the page */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+}
+
+/* Button Styling */
+.big-button {
+  width: 80%;
+  max-width: 400px;
+  padding: 20px;
+  margin: 10px 0;
+  font-size: 1.5rem;
+  color: white;
+  background-color: #007BFF;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s, box-shadow 0.2s;
+  text-align: center;
+}
+
+.big-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+}
+
+.big-button:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .big-button {
+    font-size: 1.2rem;
+    padding: 15px;
+  }
+}
+</style>
